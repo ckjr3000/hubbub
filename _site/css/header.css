@@ -164,11 +164,6 @@ header #header-links a:hover {
     }
 }
 
-@media only screen and (max-width: 400px) {
-    header img {
-        margin-left: 0;
-        margin-right: 300px;
-    }
-}
+
 
 
