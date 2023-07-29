@@ -1,6 +1,57 @@
 @import url('./reset.css');
 
+/* color palette */
+:root {
+    --purple: #480D9E;
+    --blue: #576EAB;
+    --green-blue: #0D929E;
+    --pink: #EB5A81;
+    --light-pink: #F48F9D;
+    --orange: #F9A45A;
+    --turquoise: #70CACC;
+    --light-green: #99D5C4;
+}
+
+@font-face {
+    font-family: 'consolas';
+    src: url(../assets/fonts/Consolas/CONSOLA.TTF);
+}
+
+* {
+    font-family: consolas;
+    color: black
+}
+
+.screen-reader-only {
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+  } 
+
 ul {
     list-style-type: none;
 }
+
+/* grow and rotate on hover animation */
+
+.grow-rotate-on-hover {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+  .grow-rotate-on-hover:hover, .grow-rotate-on-hover:focus, .grow-rotate-on-hover:active {
+    -webkit-transform: scale(1.1) rotate(4deg);
+    transform: scale(1.1) rotate(4deg);
+  }
 
