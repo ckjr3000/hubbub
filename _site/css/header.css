@@ -1,6 +1,9 @@
+@import url('./reset.css');
+
 header {
     border: 5px dashed black;
     margin: 10px;
+    width: 99vw;
 }
 
 header ul {
@@ -31,6 +34,8 @@ header #header-links li {
 }
 
 header #header-links a {
+    color: black;
+    font-size: xx-large;
     text-decoration: none;
 }
 

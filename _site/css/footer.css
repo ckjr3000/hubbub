@@ -1,10 +1,13 @@
+@import url('./reset.css');
+
 footer {
     background-color: black;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 25px 10px;
+    padding: 25px;
+    width: 100vw
 }
 
 footer p {
@@ -13,31 +16,4 @@ footer p {
 
 footer a {
     color: white;
-}
-
-@media only screen and (max-width: 764px) {
-    footer {
-        display: flex;
-        flex-direction: column;
-    }
-  }
-
-@media only screen and (max-width: 644px) {
-    footer {
-        padding: 15px 0px;
-    }
-
-    p, a {
-        font-size: small;
-    }
-}
-
-@media only screen and (max-width: 644px) {
-    footer {
-        padding: 15px 0px;
-    }
-
-    p, a {
-        font-size: small;
-    }
 }

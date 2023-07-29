@@ -30,36 +30,102 @@
     
 <h1>All HUBBUB Artists</h1>
 
-<section>
-    <h2>Digital Gardens</h2>
-    <ul>
-        <li><a href="/artists/alexmclean">Alex McLean</a></li>
-        <li><a href="/artists/bearkenchington">Bear Kenchington</a></li>
-        <li><a href="/artists/bionisamp">Bioni Samp</a></li>
-        <li><a href="/artists/blueruth">Blue Ruth</a></li>
-        <li><a href="/artists/digitalselves">digital selves</a></li>
-        <li><a href="/artists/inakhla">I. Nakhla</a></li>
-        <li><a href="/artists/vbuckenham">V. Buckenham</a></li>
-    </ul>
-</section>
+<div id="lists">
+    <section>
+        <h2 style="color: var(--pink)">Digital Gardens</h2>
+        <img src="../assets/images/zerocool.png" alt="">
+        <ul>
+            <li><a href="/artists/alexmclean" class="grow-rotate-on-hover">Alex McLean</a></li>
+            <li><a href="/artists/bearkenchington" class="grow-rotate-on-hover">Bear Kenchington</a></li>
+            <li><a href="/artists/bionisamp" class="grow-rotate-on-hover">Bioni Samp</a></li>
+            <li><a href="/artists/blueruth" class="grow-rotate-on-hover">Blue Ruth</a></li>
+            <li><a href="/artists/digitalselves" class="grow-rotate-on-hover">digital selves</a></li>
+            <li><a href="/artists/inakhla" class="grow-rotate-on-hover">I. Nakhla</a></li>
+            <li><a href="/artists/vbuckenham" class="grow-rotate-on-hover">V. Buckenham</a></li>
+        </ul>
+    </section>
+    
+    <section>
+        <h2 style="color: var(--purple)">Zero Parameters</h2>
+        <img src="../assets/images/peanut.png" alt="">
+        <p>To be announced...</p>
+    </section>
+    
+    <section>
+        <h2 style="color: var(--orange)">Winter Process</h2>
+        <img src="../assets/images/kobo.png" alt="">
+        <p>To be announced...</p>
+    </section>
 
-<section>
-    <h2>Zero Parameters</h2>
-    <p>To be announced...</p>
-</section>
+</div>
 
-<section>
-    <h2>Winter Process</h2>
-    <p>To be announced...</p>
-</section>
+<style>
+
+    #lists {
+        display: flex;
+        flex-direction: row;
+        align-items: top;
+        justify-content: center;
+        padding: 50px;
+    }
+
+    section {
+        padding: 0px 50px;
+    }
+
+    h1 {
+        padding: 20px 0px 10px 0px;
+    }
+
+    h1, h2 {
+        text-align: center;
+    }
+
+    h2 {
+        font-size: xx-large;
+    }
+
+    ul {
+        text-align: center;
+    }
+
+    a, p {
+        font-size: x-large;
+    }
+
+    a {
+        color: var(--purple);
+    }
+
+    p {
+        text-align: center;
+    }
+
+    @media only screen and (max-width: 1153px) {
+        #lists {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        section {
+            padding: 10px;
+            border-bottom: 5px dashed black;
+        }
+
+        section img {
+            width: 50vw
+        }
+    }
+
+</style>
     
     
     <link rel="stylesheet" href="/css/footer.css">
 
 
 <footer id="footer">
-        <p>Website by <a href="https://charlotteroe.space/" target="_blank">Charlotte Roe ↗<span class="screen-reader-only">(opens in new tab)</span></a>. Graphics by <a href="https://www.instagram.com/cosmic_haylz" target="_blank">Hayley Morgan ↗<span class="screen-reader-only">(opens in new tab)</span></a>.</p>
-        <p>© 2023</p>
+        <p>Website by <a href="https://charlotteroe.space/" target="_blank">Charlotte Roe ↗<span class="screen-reader-only">(opens in new tab)</span></a>. Graphics by <a href="https://www.instagram.com/cosmic_haylz" target="_blank">Hayley Morgan ↗<span class="screen-reader-only">(opens in new tab)</span></a>. © 2023</p>
 </footer>
 </body>
 </html>
