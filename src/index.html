@@ -3,36 +3,327 @@ title: HUBBUB
 layout: layouts/base.html
 ---
 
-<section>
+<section id="intro-paragraph">
     <h1 class="screen-reader-only">HUBBUB</h1>
-    <p>
-        The final 6 months programme from dai hall.
-    </p>
-    <p>
-        In HUBBUB, ame will introduce three residencies and music/sound art programmes during 2023: 
-        Digital Gardens, Zero Parameters, and Winter Process. 
-    </p>
-    <p>
-        HUBBUB will represent a diversity of performance art & culture, commissioning marginal 
-        and experimental artists and musicians from all over the world to deliver inspiring works 
-        as a form of residency, music performance, exhibition and workshop at Dai Hall situated at 
-        the heart of Kirklees.
-    </p>
+    <button id="toggle-button" aria-label="Toggle About HUBBUB" aria-expanded="true">
+        About HUBBUB &#709;
+    </button>
+    <div id="intro-content">
+        <p>
+            The final 6 month programme from dai hall.
+        </p>
+        <p>
+            In HUBBUB, ame will introduce three residencies and music/sound art programmes during 2023: 
+            Digital Gardens, Zero Parameters, and Winter Process. 
+        </p>
+        <p>
+            HUBBUB will represent a diversity of performance art & culture, commissioning marginal 
+            and experimental artists and musicians from all over the world to deliver inspiring works 
+            as a form of residency, music performance, exhibition and workshop at Dai Hall situated at 
+            the heart of Kirklees.
+        </p>
+    </div>
 </section>
-<section>
-    <h2>Digital Gardens</h2>
-    <p>1st - 3rd September 2023</p>
-    <a href="/digitalgardens">
-        Go to Digital Gardens programme
-    </a>
+
+<section id="programmes">
+
+    <div class="circle">
+        <p>1</p>
+    </div>
+    <section class="programme" id="digital-gardens">
+        <h2 class="screen-reader-only">Digital Gardens</h2>
+        <div class="graphics">
+            <img src="assets/images/dg-logo.png" alt="digital gardens logo">
+            <img src="assets/images/zerocool.png" alt="" class="character">
+        </div>
+        <h3>1st - 3rd September 2023</h3>
+        <a href="/digitalgardens" class="grow-rotate-on-hover">
+            Digital Gardens Programme
+        </a>
+    </section>
+
+    <div class="circle">
+        <p>2</p>
+    </div>
+    <section class="programme" id="zero-parameters">
+        <h2 class="screen-reader-only">Zero Parameters</h2>
+        <div class="graphics">
+            <img src="assets/images/peanut.png" alt="" class="character">
+            <img src="assets/images/zp-logo.png" alt="digital gardens logo" class="title">
+        </div>
+        <h3>27th - 29th October 2023</h3>
+        <p>Programme to be announced in September</p>
+    </section>
+
+    <div class="circle">
+        <p>3</p>
+    </div>
+    <section class="programme" id="winter-process">
+        <h2 class="screen-reader-only">Winter Process</h2>
+        <div class="graphics">
+            <img src="assets/images/wp-logo.png" alt="digital gardens logo" class="title">
+            <img src="assets/images/kobo.png" alt="" class="character">
+        </div>
+        <h3>December 2023</h3>
+        <p>Programme to be announced in October</p>
+    </section>
 </section>
-<section>
-    <h2>Zero Parameters</h2>
-    <p>27th - 29th October 2023</p>
-    <p>Programme to be announced in September</p>
-</section>
-<section>
-    <h2>Winter Process</h2>
-    <p>December 2023</p>
-    <p>Programme to be announced in October</p>
-</section>
+
+<style>
+
+    /* Intro Section */
+
+    #intro-paragraph {
+        border-radius: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 3vh 5vw;
+        padding: 20px;
+    }
+
+    p {
+        font-size: x-large;
+        padding: 10px 30px;
+    }
+
+    #intro-paragraph #intro-content {
+        background-color: var(--light-pink);
+        display: block;
+    }
+
+    #toggle-button {
+        display: none;
+    }
+
+    @media only screen and (max-width: 1000px) {
+        p {
+            font-size: large;
+        }
+    } 
+
+    @media only screen and (max-width: 515px) {
+        #intro-paragraph {
+            padding: 15px;
+      }
+
+        p {
+            padding: 8px 10px;
+        }
+    }
+
+    @media only screen and (max-width: 412px) {
+        #intro-paragraph {
+            margin: 0;
+            border-radius: 0;
+        }
+
+        #toggle-button {
+            display: block;
+            border: 4px solid var(--blue);
+            color: var(--blue);
+            background-color: white;
+            font-size: x-large;
+            padding: 10px 15px;
+            margin-bottom: 8px;
+
+        }
+
+        #intro-paragraph #intro-content {
+            background-color: var(--light-green);
+            display: none;
+            justify-content: center;
+        }
+    }
+
+    /* Programmes list */
+
+    #programmes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .circle {
+        border-radius: 50%;
+        width: 34px;
+        height: 34px;
+        padding: 20px;
+        background: #fff;
+        border: 3px solid #000;
+        color: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .programme {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 30px 0px;
+        padding: 90px;
+    }
+
+    .programme h3 {
+        font-size: xx-large;
+    }
+
+    .programme a {
+        font-size: x-large;
+        margin-top: 15px;
+    }
+
+    #digital-gardens {
+        border: 8px dashed var(--pink);
+    }
+
+    #digital-gardens h3 {
+        color: var(--pink);
+    }
+
+    #zero-parameters {
+        border: 8px dashed var(--purple);
+    }
+
+    #zero-parameters h3 {
+        color: var(--purple);
+    }
+
+    #winter-process {
+        border: 8px dashed var(--orange);
+    }
+
+    #winter-process h3 {
+        color: var(--orange);
+    }
+
+    .graphics {
+        display: flex;
+        flex-direction: row;
+        align-items: top;
+        justify-content: center;
+    }
+
+    .character {
+        max-width: 18vw;
+    }
+
+    @media only screen and (max-width: 1475px) {
+        .programme {
+            margin: 20px 15px;
+        }
+
+        .graphics {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .character {
+            max-width: 20vw;
+        }
+    }
+
+    @media only screen and (max-width: 1245px) {
+        .character {
+            max-width: 30vw;
+        }
+    }
+
+    @media only screen and (max-width: 900px) {
+
+        #digital-gardens {
+            border: 6px dashed var(--pink);
+        }
+
+        #zero-parameters {
+            border: 6px dashed var(--purple);
+        }
+
+        #winter-process {
+            border: 6px dashed var(--orange);
+        }
+    }
+
+    @media only screen and (max-width: 659px) {
+
+        .programme {
+            padding: 20px;
+        }
+
+        .programme h3 {
+            font-size: x-large;
+        }
+
+        .programme a {
+            font-size: large;
+        }
+    }
+
+
+    @media only screen and (max-width: 610px) {
+        .character {
+            max-width: 40vw;
+        }
+    }
+
+    @media only screen and (max-width: 412px) {
+
+        .programme h3, p, a {
+            text-align: center;
+            padding: 5px;
+        }
+
+        .circle {
+            margin-top: 25px;
+        }
+        
+        #digital-gardens {
+            border: none;
+        }
+
+        #zero-parameters {
+            border: none;
+        }
+
+        #winter-process {
+            border: none;
+        }
+
+    }
+
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const toggleButton = document.getElementById("toggle-button");
+      const introContent = document.querySelector("#intro-paragraph #intro-content");
+  
+      function toggleIntro() {
+        if (introContent.style.display === "none") {
+          introContent.style.display = "block";
+        } else {
+          introContent.style.display = "none";
+        }
+        
+        const buttonText = introContent.style.display === "none" ? "About HUBBUB &#709;" : "Collapse &#8963;";
+        toggleButton.innerHTML = buttonText;
+        toggleButton.setAttribute("aria-expanded", introContent.style.display === "block");
+      }
+  
+      if (window.innerWidth <= 412) {
+        toggleIntro(); 
+      } else {
+        toggleButton.textContent = "About HUBBUB";
+      }
+  
+      toggleButton.addEventListener("click", toggleIntro);
+    });
+  </script>
+  

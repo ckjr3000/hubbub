@@ -6,10 +6,10 @@
     --blue: #576EAB;
     --green-blue: #0D929E;
     --pink: #EB5A81;
-    --light-pink: #F48F9D;
+    --light-pink: #f5b9c1;
     --orange: #F9A45A;
     --turquoise: #70CACC;
-    --light-green: #99D5C4;
+    --light-green: #b1d6cc;
 }
 
 @font-face {
@@ -19,7 +19,7 @@
 
 * {
     font-family: consolas;
-    color: black
+    color: black;
 }
 
 .screen-reader-only {
@@ -54,4 +54,3 @@ ul {
     -webkit-transform: scale(1.1) rotate(4deg);
     transform: scale(1.1) rotate(4deg);
   }
-
