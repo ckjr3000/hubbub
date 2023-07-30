@@ -23,6 +23,15 @@
     border-radius: 25px;
 }
 
+#intro-info ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+}
+
 #intro-info a, p {
     padding: 5px 0px;
 }
@@ -205,12 +214,19 @@ audio {
 
     #jump-to a {
         font-size: x-large;
-        margin-bottom: 15px;
     }
 
     figure {
         border: 3px dashed black;
         padding: 50px;
+    }
+
+    .day p {
+        margin: 0;
+    }
+
+    .day a {
+        font-size: x-large;
     }
 
 }
@@ -225,10 +241,6 @@ audio {
     
     .title {
         padding: 15px 0px;
-    }
-
-    .day p {
-        margin: 0;
     }
 
 }

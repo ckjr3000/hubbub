@@ -80,6 +80,11 @@ header #header-links a:hover {
         text-align: center;
     }
 
+    header #header-links li {
+        margin: 0px;
+        padding: 0px;
+    }
+
     header img {
         width: 75vw;
         margin: 0;
@@ -92,12 +97,6 @@ header #header-links a:hover {
 
     header img {
         width: 90vw;
-    }
-
-    header #header-links a {
-        padding: 10px 0px;
-        text-decoration: underline;
-        text-decoration-color: var(--blue);
     }
     
 }
