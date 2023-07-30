@@ -121,6 +121,15 @@ audio {
         width: 50vw;
     }
 
+    #intro-info {
+        margin: 0;
+        border-radius: 0;
+    }
+
+    #intro-info p, .day p {
+        font-size: large;
+    }
+
 }
 
 @media only screen and (max-width: 810px) {
@@ -130,9 +139,6 @@ audio {
 }
 
 @media only screen and (max-width: 745px) {
-    #intro-info {
-        margin: 5px 50px;
-    }
 
     .day ul {
         padding: 0;
@@ -168,14 +174,6 @@ audio {
 
 }
 
-@media only screen and (max-width: 680px) {
-
-    .day p {
-        margin: 35px;
-    }
-
-}
-
 @media only screen and (max-width: 644px) {
 
     .day {
@@ -200,19 +198,14 @@ audio {
         padding: 20px;
     }
 
-    #intro-info p, 
-    #intro-info a{
-        font-size: x-large;
+    #intro-info a {
+        font-size: large;
+        padding: 15px 0px;
     }
 
     #jump-to a {
         font-size: x-large;
         margin-bottom: 15px;
-    }
-
-    .day p {
-        font-size: x-large;
-        margin: 5px;
     }
 
     figure {
@@ -231,7 +224,11 @@ audio {
 @media only screen and (max-width: 513px) {
     
     .title {
-        padding: 15px;
+        padding: 15px 0px;
+    }
+
+    .day p {
+        margin: 0;
     }
 
 }
@@ -247,11 +244,6 @@ audio {
 
 @media only screen and (max-width: 449px) {
     
-    .day {
-        border: none;
-        border-top: 5px dashed var(--pink);
-    }
-
     h3 {
         color: var(--blue);
         font-size: xx-large;
