@@ -3,34 +3,26 @@
 header {
     border: 5px dashed black;
     margin: 10px;
-    width: 99vw;
-}
-
-header ul {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+}
+
+header ul {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 header img {
-    width: 25vw;
-    margin-bottom: 10px;
-}
-
-header li {
-    margin: 0 10px 0 10px;
-}
-
-header #header-links {
-    display: flex;
-    flex-direction: row;
-    font-size: xx-large;
-    margin: 0 10vw 0 0;
+     width: 25vw;
 }
 
 header #header-links li {
-    margin: 0 2vw 0 2vw;
+    margin: 0 25px;
 }
 
 header #header-links a {
@@ -45,125 +37,86 @@ header #header-links a:hover {
 
 /* Breakpoints */
 
-@media only screen and (max-width: 1415px) {
-    header #header-links {
-        font-size: x-large;
-        margin: 0 5vw 0 0;
-    }
-  }
-
-@media only screen and (max-width: 1123px) {
-    header {
-        border: 4px dashed black;
+@media only screen and (max-width: 1200px){
+    header #header-links li {
+        margin: 0 17px;
     }
 }
 
-@media only screen and (max-width: 1005px) {
-    header #header-links {
-        font-size: x-large;
-        margin: 0 3vw 0 0;
-    }
-  }
-
-@media only screen and (max-width: 973px) {
-
+@media only screen and (max-width: 1136px){
     header ul {
-        display: flex;
         flex-direction: column;
-        margin: 0;
+    }
+
+    header ul li {
+        padding: 10px 0px;
+    }
+
+    header img {
+        width: 35vw;
+    }
+}
+
+@media only screen and (max-width: 852px){
+
+    header {
+        flex-direction: column;
         align-items: center;
         justify-content: center;
     }
 
-    header img {
-        width: 30vw;
+    header ul {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         margin: 0;
-        margin-bottom: 15px;
+        padding: 0;
     }
 
     header #header-links {
-        margin: 0;
-        margin-bottom: 10px;
-    }
-}
-
-@media only screen and (max-width: 795px) {
-
-    header img {
-        width: 40vw;
-    }
-}
-
-@media only screen and (max-width: 662px) {
-
-    header img {
-        width: 60vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
 
-    header #header-links {
-        font-size: large;
-        justify-content: space-evenly;
-    }
-}
-
-@media only screen and (max-width: 644px) {
-
-    header {
-        border: none;
-    }
-
-    header img {
-        margin-right: 45px;
-    }
-
-    header #header-links {
-        font-size: medium;
-        margin-top: 10px;
-    }
-
-    header #header-links li {
-        background-color: var(--light-pink);
-    }
-
-    header #header-links a {
-        color: black;
-        padding: 5px 6px;
-    }
-
-    header #header-links a:hover {
-        color: black;
-        padding: 6px;
-    }
-}
-
-@media only screen and (max-width: 514px) {
     header img {
         width: 75vw;
+        margin: 0;
+        padding: 0;
     }
 
-    header #header-links {
-        flex-direction: column;;
-    }
+}
 
-    header #header-links li {
-        margin: 5px 0px;
-        text-align: center;
-        border-radius: 5px;
+@media only screen and (max-width: 490px){
+
+    header img {
+        width: 90vw;
     }
 
     header #header-links a {
-        font-size: larger;
-        padding: 10px;
+        padding: 10px 0px;
+        text-decoration: underline;
+        text-decoration-color: var(--blue);
+    }
+    
+}
+
+@media only screen and (max-width: 366px) {
+    header #header-links a {
+        font-size: x-large;
     }
 }
 
-@media only screen and (max-width: 438px) {
+@media only screen and (max-width: 250px) {
+    header {
+        border: none;
+        margin: 0;
+        border-bottom: 5px dashed black;
+    }
+
     header img {
-        margin-left: 0;
-        margin-right: 350px;
+        width: 100vw;
     }
 }
-
-
-
-
