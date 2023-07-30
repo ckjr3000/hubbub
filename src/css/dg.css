@@ -105,6 +105,32 @@ audio {
     width: 33vw;
 }
 
+#supporter-logos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#supporter-logos #logos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px;
+}
+
+#supporter-logos #logos .row {
+    display: flex;
+    flex-direction: row;
+    align-items: space-evenly;
+}
+
+#supporter-logos #logos .row img {
+    width: 30vw;
+    padding: 25px;
+}
+
 @media only screen and (max-width: 1407px) {
 
     #intro-info {
@@ -227,6 +253,11 @@ audio {
 
     .day a {
         font-size: x-large;
+    }
+
+    #supporter-logos #logos .row img {
+        width: 30vw;
+        padding: 15px;
     }
 
 }
