@@ -31,7 +31,8 @@
 <h1>All HUBBUB Artists</h1>
 
 <div id="lists">
-    <section>
+
+    <section class="list">
         <h2 style="color: var(--pink)">Digital Gardens</h2>
         <img src="../assets/images/zerocool.png" alt="">
         <ul>
@@ -45,13 +46,13 @@
         </ul>
     </section>
     
-    <section>
+    <section class="list">
         <h2 style="color: var(--purple)">Zero Parameters</h2>
         <img src="../assets/images/peanut.png" alt="">
         <p>To be announced...</p>
     </section>
     
-    <section>
+    <section class="list">
         <h2 style="color: var(--orange)">Winter Process</h2>
         <img src="../assets/images/kobo.png" alt="">
         <p>To be announced...</p>
@@ -66,7 +67,18 @@
         flex-direction: row;
         align-items: top;
         justify-content: center;
-        padding: 50px;
+        padding: 15px;
+    }
+
+    .list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: top;
+        text-align: center;
+        border: 5px dashed var(--blue);
+        padding: 15px 10px;
+        margin: 10px;
     }
 
     section {
@@ -85,8 +97,13 @@
         font-size: xx-large;
     }
 
-    ul {
+    .list ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         text-align: center;
+        padding: 0;
     }
 
     a, p {
@@ -115,6 +132,55 @@
 
         section img {
             width: 50vw
+        }
+
+        h1 {
+            padding: 5px;
+            font-size: 50px;
+        }
+
+        h2 {
+            font-size: 45px;
+        }
+    }
+
+    @media only screen and (max-width: 1012px) {
+
+        .list {
+            padding: 15px 50px;
+        }
+
+        .list a {
+            font-size: xx-large;
+        }
+    }
+
+    @media only screen and (max-width: 1012px) {
+        h2 {
+            font-size: 50px;
+        }
+    }
+
+    @media only screen and (max-width: 587px) {
+        h2 {
+            font-size: 40px;
+        }
+
+        .list a {
+            font-size: x-large;
+        }
+    }
+
+    @media only screen and (max-width: 587px) {
+        h1 {
+            font-size: 40px;
+        }
+    }
+
+    @media only screen and (max-width: 411px) {
+        .list a {
+            font-size: large;
+            padding: 5px 0px;
         }
     }
 
