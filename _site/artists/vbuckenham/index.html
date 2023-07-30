@@ -6,8 +6,6 @@
     <title>HUBBUB - v buckenham</title>
     <link rel="stylesheet" href="/css/global.css">
     
-    <link rel="stylesheet" href="/css/artist.css">
-
 </head>
 <body>
     
@@ -38,7 +36,9 @@
 
 <section class="bio">
     <p>
-        v buckenham is a artist who works with technology & play. 
+        v buckenham is an artist who works with technology & play. 
+    <p>
+    <p>
         They like to explore generative systems, and they like to make tools that let other people explore generative systems. 
         They are currently at work on Downpour, a creation tool for hypertext collages. Previously, they have worked on the 
         award-winning video games Beasts of Balance, Mutazione and Panoramical, as well as co-founding the festival of play Now Play This.
@@ -52,6 +52,107 @@
     <p>v buckenham is one of the three Digital Gardens artists-in-residence along with <a href="../../artists/inakhla">I. Nakhla</a> and <a href="../../artists/bearkenchington">Bear Kenchington</a></p>
 
 </section>
+
+<style>
+
+    figure {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    figure img {
+        width: 45vw;
+        border-radius: 25px;
+        margin: 20px 0px 10px 0px;
+    }
+
+    figure figcaption {
+        font-size: large;
+    }
+
+    .bio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 250px;
+    }
+
+    .bio ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .bio p {
+        text-align: center;
+        font-size: x-large;
+        margin: 10px 0px;
+    }
+
+    .bio h2 {
+        font-size: xx-large;
+    }
+
+    .bio li {
+        text-align: center;
+    }
+
+    .bio a {
+        font-size: x-large;
+        color: var(--purple);
+    }
+
+    audio {
+        width: 33vw;
+        margin: 20px 0px;
+    }
+
+    @media only screen and (max-width: 1425px) {
+        figure img {
+            width: 75vw;
+        }
+
+        .bio {
+            margin: 15px 200px;
+        }
+    }
+
+    @media only screen and (max-width: 983px) {
+        .bio {
+            margin: 10px 150px;
+        }
+
+        audio {
+            width: 50vw;
+        }
+    }
+
+    @media only screen and (max-width: 729px) {
+         figure img {
+            width: 90vw;
+         }
+
+         .bio {
+            margin: 8px 50px;
+         }
+
+         audio {
+            width: 60vw;
+         }
+    }
+
+    @media only screen and (max-width: 520px) {
+        .bio p {
+            font-size: large;
+        }
+    }
+
+</style>
 
 
     

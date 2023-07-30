@@ -6,8 +6,6 @@
     <title>HUBBUB - Alex McLean</title>
     <link rel="stylesheet" href="/css/global.css">
     
-    <link rel="stylesheet" href="/css/artist.css">
-
 </head>
 <body>
     
@@ -39,7 +37,9 @@
 
 <section class="bio">
     <p>
-        Alex McLean is a Sheffield-based algorithmic musician and live coder.<br>
+        Alex McLean is a Sheffield-based algorithmic musician and live coder.
+    </p>
+    <p>
         He co-founded the Algorave movement, Algomech festival, and created
         the free/open source TidalCycles live coding software. Alex has
         performed live coded music widely including at Sonar, No Bounds,
@@ -64,6 +64,107 @@
     </ul>
     
 </section>
+
+<style>
+
+    figure {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    figure img {
+        width: 45vw;
+        border-radius: 25px;
+        margin: 20px 0px 10px 0px;
+    }
+
+    figure figcaption {
+        font-size: large;
+    }
+
+    .bio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 250px;
+    }
+
+    .bio ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .bio p {
+        text-align: center;
+        font-size: x-large;
+        margin: 10px 0px;
+    }
+
+    .bio h2 {
+        font-size: xx-large;
+    }
+
+    .bio li {
+        text-align: center;
+    }
+
+    .bio a {
+        font-size: x-large;
+        color: var(--purple);
+    }
+
+    audio {
+        width: 33vw;
+        margin: 20px 0px;
+    }
+
+    @media only screen and (max-width: 1425px) {
+        figure img {
+            width: 75vw;
+        }
+
+        .bio {
+            margin: 15px 200px;
+        }
+    }
+
+    @media only screen and (max-width: 983px) {
+        .bio {
+            margin: 10px 150px;
+        }
+
+        audio {
+            width: 50vw;
+        }
+    }
+
+    @media only screen and (max-width: 729px) {
+         figure img {
+            width: 90vw;
+         }
+
+         .bio {
+            margin: 8px 50px;
+         }
+
+         audio {
+            width: 60vw;
+         }
+    }
+
+    @media only screen and (max-width: 520px) {
+        .bio p {
+            font-size: large;
+        }
+    }
+
+</style>
     
     
     <link rel="stylesheet" href="/css/footer.css">
