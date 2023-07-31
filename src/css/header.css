@@ -31,7 +31,7 @@ header #header-links a {
 }
 
 header #header-links a:hover {
-    color: var(--pink);
+    color: var(--dark-pink);
 }
 
 /* Breakpoints */
