@@ -127,7 +127,7 @@ audio {
 }
 
 #supporter-logos #logos .row img {
-    width: 30vw;
+    width: 10vw;
     padding: 25px;
 }
 
@@ -135,6 +135,11 @@ audio {
 
     #intro-info {
         margin: 10px 100px;
+    }
+
+    #supporter-logos #logos .row img {
+        width: 15vw;
+        padding: 25px;
     }
     
 }
@@ -170,6 +175,11 @@ audio {
 @media only screen and (max-width: 810px) {
     .graphics {
         padding: 0px 25px;
+    }
+
+    #supporter-logos #logos .row img {
+        width: 20vw;
+        padding: 25px;
     }
 }
 
@@ -255,16 +265,16 @@ audio {
         font-size: x-large;
     }
 
-    #supporter-logos #logos .row img {
-        width: 30vw;
-        padding: 15px;
-    }
-
 }
 
 @media only screen and (max-width: 560px) {
     figure {
         padding: 40px;
+    }
+
+    #supporter-logos #logos .row img {
+        width: 30vw;
+        padding: 25px;
     }
 }
 
@@ -294,5 +304,10 @@ audio {
 
     audio {
         width: 90vw;
+    }
+
+    #supporter-logos #logos .row img {
+        width: 30vw;
+        padding: 15px;
     }
 }
