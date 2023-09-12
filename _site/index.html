@@ -19,7 +19,7 @@
                 <li aria-label="link to home"><a href="/" class="grow-rotate-on-hover"><img src="/assets/images/logo.png" alt="hubbub logo" width="300px"></a></li>
             </div>
             <div id="header-links">
-                <li class="grow-rotate-on-hover"><a class="grow-rotate-on-hover" href="/digitalgardens" aria-label="Digital Gardens link">Digital Gardens</a></li>
+                <li class="grow-rotate-on-hover"><a class="grow-rotate-on-hover" href="/zeroparameters" aria-label="Zero Parameters link">Zero Parameters '23</a></li>
                 <li class="grow-rotate-on-hover"><a href="/artistlist" class="grow-rotate-on-hover" aria-label="Artists link">Artists</a></li>
                 <li class="grow-rotate-on-hover"><a href="https://ko-fi.com/amespace/shop" target="_blank" rel="noopener noreferrer" class="grow-rotate-on-hover" aria-label="Get Tickets link">Get Tickets ↗<span class="screen-reader-only">(opens in new tab)</span></a></li>
             </div>
@@ -62,6 +62,16 @@
             <img src="assets/images/zerocool.png" alt="" class="character">
         </div>
         <h3>1st - 3rd September 2023</h3>
+        <p>Digital Gardens is now over, thank you to all who performed, exhibited work and attended!</p>
+        <iframe 
+            src="https://www.youtube.com/embed/1vijuG6tvx8?si=Rbi_3dMgG1s13pfL" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen
+            >
+        </iframe>
+        <li id="yt-link-small-screens" class="grow-rotate-on-hover"><a href="https://youtu.be/1vijuG6tvx8?si=FhRcwsZthHPwZrZj" target="_blank" rel="noopener noreferrer" class="grow-rotate-on-hover" aria-label="Get Tickets link">Watch some highlights from the weekend ↗<span class="screen-reader-only">(opens in new tab)</span></a></li>
         <a href="/digitalgardens" class="grow-rotate-on-hover">
             Digital Gardens Programme
         </a>
@@ -77,7 +87,9 @@
             <img src="assets/images/zp-logo.png" alt="digital gardens logo" class="title">
         </div>
         <h3>27th - 29th October 2023</h3>
-        <p>Programme to be announced in September</p>
+        <a href="/digitalgardens" class="grow-rotate-on-hover">
+            Zero Parameters Programme
+        </a>
     </section>
 
     <div class="circle">
@@ -295,7 +307,6 @@
         }
     }
 
-
     @media only screen and (max-width: 610px) {
         .character {
             max-width: 40vw;
@@ -313,6 +324,56 @@
             margin-top: 25px;
         }
 
+    }
+
+        /* Handling YoutTube Embeds */
+
+    iframe {
+    width: 1024px;
+    height: 576px;
+    margin: 15px;
+    }
+
+    #yt-link-small-screens {
+    display: none;
+    }
+
+    @media only screen and (max-width: 1260px) {
+    iframe {
+    width: 560px;
+    height: 315px;
+    }
+    }
+
+    @media only screen and (max-width: 622px) {
+    iframe {
+    width: 500px;
+    height: 300px;
+    }
+    }
+
+    @media only screen and (max-width: 558px) {
+    iframe {
+    width: 400px;
+    height: 250px;
+    }
+    }
+
+    @media only screen and (max-width: 399px) {
+    iframe {
+    display: none;
+    }
+
+    #yt-link-small-screens {
+    display: block;
+    }
+    }
+
+    @media only screen and (max-width: 454px) {
+    iframe {
+    width: 350px;
+    height: 200px;
+    }
     }
 
 </style>
